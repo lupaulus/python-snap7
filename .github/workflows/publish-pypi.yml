@@ -78,7 +78,7 @@ jobs:
       - name: install python-snap7
         run: |
           uv venv
-          uv pip install --extra-index-url https://test.pypi.org/simple/ python-snap7[test]
+          uv pip install python-snap7[test]
 
   test-pypi-package-windows:
     runs-on: ${{ matrix.os }}
@@ -103,4 +103,5 @@ jobs:
 
       - name: install python-snap7
         run: |
-          uv pip install --extra-index-url https://test.pypi.org/simple/ python-snap7[test]
+          uv venv
+          uv pip install python-snap7[test]
