@@ -37,4 +37,4 @@ runs:
       - name: Update wheel
         shell: bash
         if: ${{ runner.os == 'macOS' }}
-        run: python3 -m pip install --upgrade pip wheel build setuptools --break-system-packages
+        run: python3 -m pip install wheel build setuptools --break-system-packages
